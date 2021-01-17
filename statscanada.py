@@ -28,13 +28,9 @@ def switch(today_day):
 
 new_day = switch(today_day)
 
-print(new_day)
-
 new_day = new_day.__str__().replace("-","", -1)
 
 url = url.substitute(date=new_day)
-
-print(url)
 
 connection = urllib3.PoolManager()
 
